@@ -1,0 +1,28 @@
+<div class="calculator">
+    <input class="screen" type="text" [value]="result" readonly>
+    <div class="operations">
+        <button (click)="setOperand('+')">+</button>
+        <button (click)="setOperand('-')">-</button>
+        <button (click)="setOperand('*')">*</button>
+        <button (click)="setOperand('/')">/</button>
+        <button (click)="clear()">C</button>
+        <button (click)="calculate()">=</button>
+    </div>
+    <div class="numbers">
+        <button (click)="setString('7')">7</button>
+        <button (click)="setString('8')">8</button>
+        <button (click)="setString('9')">9</button>
+        <br>
+        <button (click)="setString('4')">4</button>
+        <button (click)="setString('5')">5</button>
+        <button (click)="setString('6')">6</button>
+        <br>
+        <button (click)="setString('1')">1</button>
+        <button (click)="setString('2')">2</button>
+        <button (click)="setString('3')">3</button>
+        <br>
+        
+        <button (click)="setString('0')">0</button>
+        <button (click)="setString('.')">.</button>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="calculator">
+    <input class="screen" type="text" [(ngModel)]="result" readonly>
+    <div class="operations">
+        <button (click)='appendSymbol("+")'>+</button>
+        <button (click)='appendSymbol("-")'>-</button>
+        <button (click)='appendSymbol("*")'>*</button>
+        <button (click)='appendSymbol("/")'>/</button>
+        <button (click)="clear()">C</button>
+        <button (click)="calculate()">=</button>
+    </div>
+    <div class="numbers">
+        <button (click)='appendSymbol("7")'>7</button>
+        <button (click)='appendSymbol("8")'>8</button>
+        <button (click)='appendSymbol("9")'>9</button>
+        <br>
+        <button (click)='appendSymbol("4")'>4</button>
+        <button (click)='appendSymbol("5")'>5</button>
+        <button (click)='appendSymbol("6")'>6</button>
+        <br>
+        <button (click)='appendSymbol("1")'>1</button>
+        <button (click)='appendSymbol("2")'>2</button>
+        <button (click)='appendSymbol("3")'>3</button>
+        <br>
+        
+        <button (click)='appendSymbol("0")'>0</button>
+        <button (click)='appendSymbol(".")'>.</button>
+    </div>
+</div>
